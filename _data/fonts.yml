@@ -11,3 +11,10 @@
   - 400
   - 700
   source: Google
+
+- name: Rajdhani
+  type: tertiary
+  weights:
+  - 400
+  - 700
+  source: Google

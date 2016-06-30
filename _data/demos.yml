@@ -1,14 +1,9 @@
-- name: Homepage layout
-  code: bpZNgK
+- name: Single events borders
+  code: yJgbRE
   type: codepen
   height: 800
 
-- name: Colored bar
-  code: oxVvXp
+- name: Single events background
+  code: begRjQ
   type: codepen
   height: 400
-
-- name: Pop over modal
-  code: QNoLpb
-  type: codepen
-  height: 800

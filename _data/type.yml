@@ -1,6 +1,6 @@
 - name: html
   font-family: primary
-  color: primary
+  color: dark
   kind: base
   style: > #
     font-size: 20px;
@@ -15,8 +15,8 @@
     margin-top: 0;
     margin-bottom: 30px;
 - name: h1
-  font-family: primary
-  color: primary
+  font-family: tertiary
+  color: dark
   kind: header
   style: > #
     font-size: 3.5rem;
@@ -25,7 +25,7 @@
     margin-top: 0;
     margin-bottom: 30px;
 - name: h2
-  font-family: primary
+  font-family: prisecondarymary
   color: secondary
   kind: header
   style: > #
@@ -35,8 +35,8 @@
     margin-top: 0;
     margin-bottom: 30px;
 - name: h3
-  font-family: primary
-  color: tertiary
+  font-family: secondary
+  color: dark
   kind: header
   style: > #
     font-size: 2rem;
@@ -46,8 +46,8 @@
     margin-bottom: 30px;
 
 - name: h4
-  font-family: primary
-  color: secondary
+  font-family: secondary
+  color: primary
   kind: header
   style: > #
     font-size: 3.75rem;
