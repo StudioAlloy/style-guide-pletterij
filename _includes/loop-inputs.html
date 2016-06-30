@@ -1,0 +1,30 @@
+{% for item in site.data.inputs %}
+{% assign family = site.data.fonts | where: "type", item.font-family %}
+{% assign color = site.data.colors | where: "name", "primary" %}
+<div class="col-md-12 flex-center">
+<style media="screen">
+input {
+  font-family: "{{ family[0].name }}";
+  {{ item.style }}
+}
+input:focus {
+  border-color: #{{ color[0].color }};
+  {{ item.focus }}
+}
+</style>
+  <input type=["text"] placeholder="{{ item.placehoder }}" >
+</div>
+<!-- <div class="col-md-4">
+  {% highlight css %}
+  .{{ item.class }} {
+    font-family: "{{ family[0].name }}";
+    color: #{{ hexcolor[0].color }};
+    {{ item.style }}
+  }
+  .{{ item.class }}:hover {
+    {{ item.hover-style }}
+  }
+  {% endhighlight %}
+</div> -->
+
+{% endfor %}

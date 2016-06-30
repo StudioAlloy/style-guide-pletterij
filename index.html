@@ -1,0 +1,128 @@
+---
+layout: default
+designs: 5
+---
+<style media="screen">
+html {
+	{% assign base = site.data.type | where: "kind", "base" %}
+	{{ base[0].style }}
+}
+</style>
+{% assign primary = site.data.colors | where: "name", "primary" %}
+{% assign alt = site.data.colors | where: "name", "alt" %}
+<div class="container-fluid intro" style="background: #{{ primary[0].color }};">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="introduction" id="sketches" style="color: #{{ alt[0].color }};">Style guide: {{ site.title }}</h1>
+			<h2 class="introduction-sub" style="color: #{{ alt[0].color }};">by <a href="//studioalloy.nl" style="color: #{{ alt[0].color }};">Studio Alloy</a></h2>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			{% for i in (1..page.designs) %}
+			<img src="img/{{ i }}.jpg" class="ui-sketch"/>
+			{% endfor %}
+
+			<h1 class="section-header" id="colors">Colors</h1>
+			<h2 class="section-subheader">Primary Colors</h2>
+			<div class="row">
+				{% assign color = site.data.colors | where: "kind", "primary" %}
+				{% include loop-color.html %}
+			</div>
+			<h2 class="section-subheader">Basic Colors</h2>
+			<div class="row">
+				{% assign color = site.data.colors | where: "kind", "basic" %}
+				{% include loop-color.html %}
+			</div>
+			<h2 class="section-subheader">Tints & Tones</h2>
+			<p class="lead">
+				These colors are lighter and darker variations of our main brand colors. These are especially helpful for hover states, illustrations, and other small variations.
+			</p>
+			<div class="row">
+				{% assign color = site.data.colors | where: "kind", "primary" %}
+				{% include loop-tint.html %}
+			</div>
+			<!-- <h2 class="section-subheader">Generated Colors</h2>
+			<p class="lead">
+				These colors are derived from combinations with other brand colors. These may be used as accents in illustrations and other design work, though they should not overpower our main brand colors. The official brand colors are displayed first for easy reference.
+			</p>
+
+			<div class="row">
+				{% assign color = site.data.colors | where: "kind", "primary" %}
+				{% include loop-mixed.html %}
+			</div> -->
+			<!-- Typography -->
+			<h1 class="section-header" id="typography">Typography</h1>
+
+			<p class="lead">
+				<strong class="primary-font"></strong> is used as our primary typeface and
+				<strong class="accent-font"></strong> is used as an accent for headings and other special purposes.
+			</p>
+			<div class="row">
+				<div class="col-md-12">
+					{% include loop-fonts.html %}
+				</div>
+			</div>
+			<h2 class="section-subheader">Headings</h2>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="heading-samples">
+						{% include loop-type.html %}
+					</div>
+				</div>
+			</div>
+			<h1 class="section-header" id="buttons">Buttons &amp; input fields</h1>
+			<p class="lead">
+				These colors are lighter and darker variations of our main brand colors. These are especially helpful for hover states, illustrations, and other small variations.
+			</p>
+			<h2 class="section-subheader">Buttons</h2>
+			{% include loop-buttons.html %}
+			<h2 class="section-subheader">Input fields</h2>
+			{% include loop-inputs.html %}
+
+			<h1 class="section-header" id="demo">Demo's</h1>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	{% include loop-demo.html %}
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h1 class="section-header" id="icons">Icons</h1>
+
+			<h2 class="section-subheader">Touch icons</h2>
+			<div class="row flex-between">
+				<img rel="apple-touch-icon" sizes="57x57" src="icons/apple-touch-icon-57x57.png">
+				<img rel="apple-touch-icon" sizes="60x60" src="icons/apple-touch-icon-60x60.png">
+				<img rel="apple-touch-icon" sizes="72x72" src="icons/apple-touch-icon-72x72.png">
+				<img rel="apple-touch-icon" sizes="76x76" src="icons/apple-touch-icon-76x76.png">
+				<img rel="apple-touch-icon" sizes="114x114" src="icons/apple-touch-icon-114x114.png">
+				<img rel="apple-touch-icon" sizes="120x120" src="icons/apple-touch-icon-120x120.png">
+			</div>
+			<div class="row flex-between">
+				<img rel="apple-touch-icon" sizes="144x144" src="icons/apple-touch-icon-144x144.png">
+				<img rel="apple-touch-icon" sizes="152x152" src="icons/apple-touch-icon-152x152.png">
+				<img rel="apple-touch-icon" sizes="180x180" src="icons/apple-touch-icon-180x180.png">
+			</div>
+			<h2 class="section-subheader">Favicons</h2>
+			<div class="row flex-between">
+				<img rel="icon" type="image/png" src="icons/favicon-16x16.png" sizes="16x16">
+				<img rel="icon" type="image/png" src="icons/favicon-32x32.png" sizes="32x32">
+				<img rel="icon" type="image/png" src="icons/favicon-96x96.png" sizes="96x96">
+				<img rel="icon" type="image/png" src="icons/favicon-194x194.png" sizes="194x194">
+				<img rel="icon" type="image/png" src="icons/android-chrome-192x192.png" sizes="192x192">
+			</div>
+			<h2 class="section-subheader">Extra icons</h2>
+			<div class="row flex-between">
+				<img rel="mask-icon" src="icons/safari-pinned-tab.svg" width="180" height="180">
+				<img rel="shortcut icon" src="icons/favicon.ico">
+			</div>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+{% for item in site.data.buttons %}
+{% assign background = site.data.colors | where: "name", item.background %}
+{% assign color = site.data.colors | where: "name", item.color %}
+{% assign family = site.data.fonts | where: "type", item.font-family %}
+<div class="col-md-12 flex-center">
+<style media="screen">
+.{{ item.class }} {
+  font-family: "{{ family[0].name }}";
+  background-color: #{{ background[0].color }};
+  color: #{{ color[0].color }};
+  {{ item.style }}
+}
+.{{ item.class }}:hover {
+  {{ item.hover-style }}
+}
+</style>
+  <a href="#" class="{{ item.class }}">{{ item.content }}</a>
+</div>
+<!-- <div class="col-md-4">
+  {% highlight css %}
+  .{{ item.class }} {
+    font-family: "{{ family[0].name }}";
+    color: #{{ hexcolor[0].color }};
+    {{ item.style }}
+  }
+  .{{ item.class }}:hover {
+    {{ item.hover-style }}
+  }
+  {% endhighlight %}
+</div> -->
+
+{% endfor %}

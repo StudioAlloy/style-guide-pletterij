@@ -1,0 +1,13 @@
+- name: Arimo
+  type: primary
+  weights:
+  - 400
+  - 700
+  source: Google
+
+- name: Quantico
+  type: secondary
+  weights:
+  - 400
+  - 700
+  source: Google

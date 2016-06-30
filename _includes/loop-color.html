@@ -1,0 +1,11 @@
+{% for item in color %}
+<div class="col-xs-6 col-md-3 color color-{{ item.name }}">
+  <div class="color__inner">
+    <div class="swatch" style="background-color: #{{ item.color }}"></div>
+    <div class="color__meta">  
+      <p class="label label-color label-name">{{ item.name }}</p>
+      <p class="label label-color label-hex">#{{ item.color | escape }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}

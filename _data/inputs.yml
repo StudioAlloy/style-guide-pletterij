@@ -1,0 +1,10 @@
+- name: primary
+  placehoder: E-mailadres
+  font-family: primary
+  style: > #
+    background: #ededed;
+    border: 3px solid #ededed;
+    font-weight: 400;
+    padding: 10px 30px;
+  focus: > #
+    outline: none;
