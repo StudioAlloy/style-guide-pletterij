@@ -15,10 +15,6 @@
   color: 29CBB0
   kind: primary
 
-- name: quinary
-  color: b7a36a
-  kind: primary
-
 - name: senary
   color: F38D31
   kind: primary
@@ -28,10 +24,6 @@
   kind: primary
 
 - name: dark
-  color: "333"
-  kind: basic
-
-- name: sub
   color: "222"
   kind: basic
 

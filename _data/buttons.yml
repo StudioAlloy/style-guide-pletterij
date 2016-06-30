@@ -6,10 +6,11 @@
   color: alt
   font-family: primary
   style: > #
-    padding: 30px 15px;
+    padding: 20px 5px;
     text-decoration: none;
     font-weight: 400;
     color: #fff;
+    min-width: 200px;
   hover-style: > #
     background-color: #fff;
     color: #B04;
