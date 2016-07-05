@@ -3,14 +3,15 @@
   color: dark
   kind: base
   style: > #
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
 - name: p
   font-family: primary
   color: dark
   kind: basic
   style: > #
-    font-size: 1rem;
-    line-height: 1.6rem;
+    font-size: 18px;
+    line-height: 28px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 30px;
@@ -19,8 +20,8 @@
   color: dark
   kind: header
   style: > #
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 60px;
+    line-height: 60px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 30px;
@@ -29,29 +30,39 @@
   color: dark
   kind: header
   style: > #
-    font-size: 2.45rem;
-    line-height: 2.7rem;
+    font-size: 60px;
+    line-height: 66px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 30px;
+    text-transform: uppercase;
 - name: h3
   font-family: tertiary
   color: dark
   kind: header
   style: > #
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 48px;
+    line-height: 48px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 30px;
-
 - name: h4
   font-family: tertiary
+  color: dark
+  kind: header
+  style: > #
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+- name: h5
+  font-family: secondary
   color: primary
   kind: header
   style: > #
-    font-size: 3.75rem;
-    line-height: 3.75rem;
+    font-size: 36px;
+    line-height: 36px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 30px;
@@ -61,8 +72,8 @@
   color: dark
   kind: list
   style: > #
-    font-size: 1rem;
-    line-height: 1.6rem;
+    font-size: 18px;
+    line-height: 36px;
     list-style: disc;
     font-weight: 400;
 
