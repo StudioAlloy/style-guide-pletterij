@@ -1,9 +1,14 @@
 - name: Single events borders
   code: yJgbRE
   type: codepen
-  height: 800
+  height: 400
 
 - name: Single events background
   code: begRjQ
+  type: codepen
+  height: 400
+
+- name: Call to action bar
+  code: KryxxQ
   type: codepen
   height: 400
